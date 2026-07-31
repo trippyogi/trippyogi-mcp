@@ -81,10 +81,11 @@ The natural-language matcher is deterministic. It does not use an LLM, browse at
 
 ### Vercel
 
-1. Import this repository as a new Vercel project.
-2. Set `ALLOWED_HOSTS` to the deployment hostname plus `trippyogi.com`, comma-separated.
-3. Deploy. `vercel.json` exposes the function at `/mcp`.
-4. In the existing `trippyogi.com` Vercel project, add an external rewrite from `/mcp` to the new project's `/mcp` URL. This keeps the public connector URL on the portfolio domain.
+1. Import this repository as a new Vercel project (framework: Other / null).
+2. Set `ALLOWED_HOSTS` to the deployment hostname plus `trippyogi.com` and `www.trippyogi.com`, comma-separated.
+3. Disable Vercel Authentication on the project — this endpoint is intentionally public.
+4. Deploy. Production alias: `https://trippyogi-mcp.vercel.app`. `/mcp` and `/health` are serverless; generated Markdown surfaces are static.
+5. In the existing `trippyogi.com` Vercel project, add an external rewrite from `/mcp` to the MCP project's `/mcp` URL. This keeps the public connector URL on the portfolio domain.
 
 Example rewrite in the portfolio project's `vercel.json`:
 
@@ -93,7 +94,7 @@ Example rewrite in the portfolio project's `vercel.json`:
   "rewrites": [
     {
       "source": "/mcp",
-      "destination": "https://YOUR-MCP-PROJECT.vercel.app/mcp"
+      "destination": "https://trippyogi-mcp.vercel.app/mcp"
     }
   ]
 }
