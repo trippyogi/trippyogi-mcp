@@ -15,7 +15,9 @@ Most portfolios ask a reviewer to trust a set of claims. This one exposes the un
 | `get_availability` | Current role targets, work modes, and public contact paths. |
 | `verify_claim` | A verdict, supported and unsupported portions, estimate marker, and receipt URLs for a natural-language claim. |
 
-The server is public, stateless, unauthenticated, rate-limited, and read-only. It records the tool name and timestamp for each call. It never logs tool inputs.
+The server is public, stateless, unauthenticated, and read-only. It applies a best-effort in-process rate limit per serverless isolate (not a shared global limiter). Prefer an edge/WAF limit in front of `/mcp` for production abuse control. It records the tool name and timestamp for each call and never logs tool inputs.
+
+`verify_claim` matches only normalized canonical claim text or explicit aliases, and fails closed when the query adds unsupported terms or conflicting numbers.
 
 ## Run it
 

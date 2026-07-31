@@ -8,15 +8,23 @@ interface Bucket {
 
 const buckets = new Map<string, Bucket>();
 
+function normalizeIp(raw: string): string {
+  const value = raw.trim().toLowerCase();
+  if (value.startsWith("::ffff:")) return value.slice("::ffff:".length);
+  return value;
+}
+
 function clientKey(c: Context, trustProxy: boolean): string {
   if (trustProxy) {
     const forwarded = c.req.header("x-forwarded-for");
     if (forwarded) {
-      const first = forwarded.split(",")[0]?.trim();
-      if (first) return first;
+      const first = forwarded.split(",")[0];
+      if (first?.trim()) return normalizeIp(first);
     }
+    const realIp = c.req.header("x-real-ip");
+    if (realIp?.trim()) return normalizeIp(realIp);
   }
-  return c.req.header("x-real-ip") ?? "local";
+  return normalizeIp(c.req.header("x-real-ip") ?? "local");
 }
 
 export function rateLimitMiddleware(config: AppConfig) {

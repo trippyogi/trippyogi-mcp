@@ -59,7 +59,7 @@ export function createMcpServer(profile: Profile, claims: ClaimRecord[]): McpSer
       description:
         "Deterministic resume claim verification against public receipts. Returns verified, partially_verified, or not_verifiable.",
       inputSchema: {
-        claim: z.string().min(1).max(500)
+        claim: z.string().max(500)
       }
     },
     async ({ claim }) => {

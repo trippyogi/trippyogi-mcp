@@ -131,7 +131,9 @@
     "aliases": [
       "180+ hours/month",
       "180 hrs/mo",
-      "saving 180 hours"
+      "saving 180 hours",
+      "saving 180 hours per month",
+      "180 hours per month"
     ],
     "verdict": "not_verifiable",
     "supported": null,
@@ -153,5 +155,121 @@
     "estimate": true,
     "numbers": [800],
     "evidence": []
+  },
+  {
+    "id": "metatravelers-cofounder",
+    "text": "Jeremy McKeehen co-founded MetaTravelers in 2021.",
+    "aliases": [
+      "co-founded MetaTravelers in 2021",
+      "co-founder of MetaTravelers",
+      "MetaTravelers founded 2021"
+    ],
+    "verdict": "partially_verified",
+    "supported": "The public site and case file consistently state the 2021 co-founder role.",
+    "unsupported": "No independent corporate registry filing is linked in this corpus.",
+    "estimate": false,
+    "numbers": [2021],
+    "evidence": [
+      {
+        "label": "trippyogi.com MetaTravelers case file",
+        "url": "https://www.trippyogi.com/metatravelers",
+        "kind": "self"
+      }
+    ]
+  },
+  {
+    "id": "allvue-role",
+    "text": "Software Engineer, Full Stack at Allvue Systems from March 2017 to February 2020.",
+    "aliases": [
+      "Allvue Systems full stack",
+      "Allvue 2017 to 2020",
+      "worked at Allvue"
+    ],
+    "verdict": "not_verifiable",
+    "supported": null,
+    "unsupported": "Former employer tenure is resume-asserted without a public third-party receipt in this corpus.",
+    "estimate": false,
+    "numbers": [2017, 2020],
+    "evidence": []
+  },
+  {
+    "id": "ucsd-degree",
+    "text": "B.S., Mechanical and Aerospace Engineering from UC San Diego.",
+    "aliases": [
+      "UCSD Mechanical and Aerospace Engineering",
+      "UC San Diego B.S.",
+      "alumni of UC San Diego"
+    ],
+    "verdict": "not_verifiable",
+    "supported": null,
+    "unsupported": "Degree is self-published on the resume/site without a registrar verification link in this corpus.",
+    "estimate": false,
+    "numbers": [],
+    "evidence": []
+  },
+  {
+    "id": "legendari-articulation",
+    "text": "Legendari figures have up to 29 points of articulation.",
+    "aliases": [
+      "29 points of articulation",
+      "29 POA"
+    ],
+    "verdict": "partially_verified",
+    "supported": "The public product marketing and storefront describe the articulation claim.",
+    "unsupported": "No independent teardown measurement is linked in this corpus.",
+    "estimate": false,
+    "numbers": [29],
+    "evidence": [
+      {
+        "label": "Shop MetaTravelers",
+        "url": "https://shopmetatravelers.com",
+        "kind": "primary"
+      }
+    ]
+  },
+  {
+    "id": "four-horsemen",
+    "text": "Legendari was designed with Four Horsemen Studios.",
+    "aliases": [
+      "designed with Four Horsemen Studios",
+      "Four Horsemen Studios"
+    ],
+    "verdict": "partially_verified",
+    "supported": "Public MetaTravelers marketing repeatedly credits Four Horsemen Studios.",
+    "unsupported": "No signed partner press release is linked in this corpus.",
+    "estimate": false,
+    "numbers": [],
+    "evidence": [
+      {
+        "label": "trippyogi.com MetaTravelers case file",
+        "url": "https://www.trippyogi.com/metatravelers",
+        "kind": "self"
+      },
+      {
+        "label": "Shop MetaTravelers",
+        "url": "https://shopmetatravelers.com",
+        "kind": "primary"
+      }
+    ]
+  },
+  {
+    "id": "andy-lanning",
+    "text": "Legendari characters were written by Andy Lanning.",
+    "aliases": [
+      "written by Andy Lanning",
+      "Andy Lanning"
+    ],
+    "verdict": "partially_verified",
+    "supported": "Public MetaTravelers marketing credits Andy Lanning (Guardians of the Galaxy).",
+    "unsupported": "No independent writer credit database entry is linked in this corpus.",
+    "estimate": false,
+    "numbers": [],
+    "evidence": [
+      {
+        "label": "trippyogi.com MetaTravelers case file",
+        "url": "https://www.trippyogi.com/metatravelers",
+        "kind": "self"
+      }
+    ]
   }
 ]
