@@ -1,5 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+  "buildCommand": "npm run check && npm test && npm run generate:site",
+  "outputDirectory": "site",
+  "rewrites": [
+    { "source": "/mcp", "destination": "/api" },
+    { "source": "/health", "destination": "/api" }
+  ]
 }
