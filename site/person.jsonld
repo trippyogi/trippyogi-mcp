@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jeremy McKeehen",
+  "url": "https://www.trippyogi.com",
+  "email": "peace@trippyogi.com",
+  "jobTitle": "Technical founder and product engineer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Diego",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://github.com/trippyogi",
+    "https://www.linkedin.com/in/jmckeehen",
+    "https://shopmetatravelers.com"
+  ],
+  "knowsAbout": [
+    "AI agent systems",
+    "Shopify commerce",
+    "smart contracts",
+    "generative 3D pipelines",
+    "collectibles fulfillment",
+    "product engineering"
+  ]
+}

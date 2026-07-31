@@ -1,0 +1,157 @@
+[
+  {
+    "id": "kickstarter-backers",
+    "text": "Legendari was backed by 673 Kickstarter backers who pledged $190,292 against a $125,000 goal.",
+    "aliases": [
+      "Legendari had 673 Kickstarter backers",
+      "673 Kickstarter backers",
+      "673 backers"
+    ],
+    "verdict": "verified",
+    "supported": "Kickstarter publicly reports the backer count, pledged amount, and campaign goal.",
+    "unsupported": null,
+    "estimate": false,
+    "numbers": [673, 190292, 125000],
+    "evidence": [
+      {
+        "label": "Legendari Kickstarter",
+        "url": "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures",
+        "kind": "independent"
+      }
+    ]
+  },
+  {
+    "id": "collectibles-minted",
+    "text": "7,777 collectibles were minted on the public Ethereum contract.",
+    "aliases": [
+      "7777 collectibles minted",
+      "7,777 minted",
+      "minted 7777"
+    ],
+    "verdict": "verified",
+    "supported": "The public contract address is published and inspectable on Etherscan.",
+    "unsupported": null,
+    "estimate": false,
+    "numbers": [7777],
+    "evidence": [
+      {
+        "label": "Genesis contract on Etherscan",
+        "url": "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5",
+        "kind": "independent"
+      }
+    ]
+  },
+  {
+    "id": "sellout-15-min",
+    "text": "The digital launch sold out in 15 minutes.",
+    "aliases": [
+      "sold out in 15 minutes",
+      "15 min sellout",
+      "15 minute sellout"
+    ],
+    "verdict": "partially_verified",
+    "supported": "The public mint contract and supply (7,777) are inspectable on Etherscan.",
+    "unsupported": "Exact sellout duration is founder-asserted and is not independently timestamped by a single public receipt in this corpus.",
+    "estimate": false,
+    "numbers": [15, 7777],
+    "evidence": [
+      {
+        "label": "Genesis contract on Etherscan",
+        "url": "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5",
+        "kind": "independent"
+      }
+    ]
+  },
+  {
+    "id": "units-shipped",
+    "text": "Over 10,000 Legendari units have been shipped internationally across 22 countries.",
+    "aliases": [
+      "10k+ units shipped",
+      "10000 units shipped",
+      "22 countries shipped",
+      "shipped across 22 countries"
+    ],
+    "verdict": "partially_verified",
+    "supported": "The Shopify storefront is public and active for collector commerce.",
+    "unsupported": "A public shipment ledger or country export is not linked; unit and country counts remain operator-asserted.",
+    "estimate": false,
+    "numbers": [10000, 22],
+    "evidence": [
+      {
+        "label": "Shop MetaTravelers",
+        "url": "https://shopmetatravelers.com",
+        "kind": "primary"
+      },
+      {
+        "label": "Legendari Kickstarter",
+        "url": "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures",
+        "kind": "independent"
+      }
+    ]
+  },
+  {
+    "id": "baton-oss",
+    "text": "Baton is open source under MIT and runs in production for MetaTravelers agent workflows.",
+    "aliases": [
+      "Baton open source",
+      "Baton MIT",
+      "built Baton"
+    ],
+    "verdict": "partially_verified",
+    "supported": "The public GitHub repository exists and can be inspected for license and code.",
+    "unsupported": "Daily production usage inside MetaTravelers is operator-asserted.",
+    "estimate": false,
+    "numbers": [],
+    "evidence": [
+      {
+        "label": "Baton repository",
+        "url": "https://github.com/trippyogi/baton",
+        "kind": "primary"
+      }
+    ]
+  },
+  {
+    "id": "two-person-team",
+    "text": "MetaTravelers operates with two full-time humans.",
+    "aliases": [
+      "2 people full-time",
+      "two-person company",
+      "two person team"
+    ],
+    "verdict": "not_verifiable",
+    "supported": null,
+    "unsupported": "Headcount is internal and has no public independent receipt.",
+    "estimate": false,
+    "numbers": [2],
+    "evidence": []
+  },
+  {
+    "id": "hours-saved",
+    "text": "Agent workflows save an estimated 180+ hours per month.",
+    "aliases": [
+      "180+ hours/month",
+      "180 hrs/mo",
+      "saving 180 hours"
+    ],
+    "verdict": "not_verifiable",
+    "supported": null,
+    "unsupported": "This is an estimate of internal time saved; no public methodology or measurement receipt is published.",
+    "estimate": true,
+    "numbers": [180],
+    "evidence": []
+  },
+  {
+    "id": "allvue-qa",
+    "text": "At Allvue, Cucumber UI testing saved an estimated ~800 manual QA hours per cycle.",
+    "aliases": [
+      "800 QA hours",
+      "800 manual QA hours"
+    ],
+    "verdict": "not_verifiable",
+    "supported": null,
+    "unsupported": "Former employer metrics are not backed by a public receipt in this corpus.",
+    "estimate": true,
+    "numbers": [800],
+    "evidence": []
+  }
+]

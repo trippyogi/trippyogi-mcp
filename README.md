@@ -22,8 +22,10 @@ The server is public, stateless, unauthenticated, rate-limited, and read-only. I
 Requires Node 22 or newer.
 
 ```bash
-npm install
+npm ci
 npm run check
+npm test
+npm run generate:site
 npm run dev
 ```
 

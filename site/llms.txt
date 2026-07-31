@@ -1,0 +1,59 @@
+# Jeremy McKeehen
+
+> From code to plastic.
+
+Technical founder and product engineer. Co-founder of MetaTravelers — built the digital launch system, the Legendari physical line, and the AI-first operating layer behind a two-person company.
+
+Site: https://www.trippyogi.com
+Email: peace@trippyogi.com
+MCP: https://www.trippyogi.com/mcp
+
+## Projects
+### Genesis Launch System
+Smart contract, generative 3D pipeline, rendering, metadata, and delivery for the MetaTravelers digital launch.
+Outcome: Sold out in 15 minutes.
+Receipt: https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5
+### Legendari Production & Fulfillment
+Physical Legendari action figure line: design partners, manufacturing, crowdfunding, and international fulfillment.
+Outcome: 673 Kickstarter backers and over 10k units shipped internationally across 22 countries.
+Live: https://shopmetatravelers.com
+Receipt: https://www.kickstarter.com/projects/metatravelers/legendari-action-figures
+Receipt: https://shopmetatravelers.com
+### Baton
+Ranking engine for human attention in multi-agent systems.
+Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
+Source: https://github.com/trippyogi/baton
+Receipt: https://github.com/trippyogi/baton
+### Company Second Brain
+Agent-side operating layer for reports, support replies, and content drafts with human approval.
+Outcome: Every report, support reply, and content draft starts agent-side; humans approve, not assemble.
+### Commerce System
+Shopify storefront supporting international collector commerce.
+Outcome: Storefront supporting international collector commerce across 22 countries.
+Live: https://shopmetatravelers.com
+Receipt: https://shopmetatravelers.com
+
+## Experience
+
+### Co-founder / Technical Founder — MetaTravelers
+2021 – present
+Built the digital launch system, pivoted to physical collectibles, and rebuilt operations AI-first for a two-person company.
+- Built the launch system across smart contract work, a generative 3D asset pipeline, automated rendering, metadata, and delivery. The result sold out in 15 minutes.
+- Shipped Legendari physical figures with design partners, factory QC, crowdfunding, and fulfillment across 22 countries.
+- Rebuilt the company AI-first: agent orchestration, second brain, and human-reviewed workflows.
+
+### Software Engineer, Full Stack — Allvue Systems
+2017-03 – 2020-02
+Full-stack engineering on private equity / fund accounting platforms after starting in application support.
+- Built Cucumber UI testing coverage estimated to save ~800 manual QA hours per cycle.
+- Worked across C#/.NET, TypeScript/JavaScript, Knockout, Python, MongoDB, and SQL.
+
+## Availability
+Looking for founder-mode product engineering: AI-first product teams, commerce platforms, and zero-to-one environments where ownership beats job descriptions.
+Best fit: AI product engineer, Product engineer, Founding engineer, Commerce systems, Agentic internal tools
+
+## Agent surfaces
+- /llms.txt
+- /resume.md
+- /projects.md
+- /mcp (Streamable HTTP MCP)
