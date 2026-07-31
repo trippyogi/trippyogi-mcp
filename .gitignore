@@ -8,3 +8,5 @@ coverage/
 
 .vercel
 .env*
+
+tmp-init.json
