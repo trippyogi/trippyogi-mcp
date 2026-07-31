@@ -9,6 +9,21 @@ Email: peace@trippyogi.com
 MCP: https://www.trippyogi.com/mcp
 
 ## Projects
+### Baton
+Ranking engine for human attention in multi-agent systems.
+Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
+Source: https://github.com/trippyogi/baton
+Receipt: https://github.com/trippyogi/baton
+### gitworthy
+Issue and contribution ranking surfaces for GitHub orgs — find high-value work worth doing.
+Outcome: Public MCP and scan tooling used to triage open-source contribution targets.
+Source: https://github.com/trippyogi/gitworthy
+Receipt: https://github.com/trippyogi/gitworthy
+### nectar
+Agentlab tenant surface for nectar — agent-readable product and ops context.
+Outcome: Shipped as a tenant package in the agentlab stack.
+Source: https://github.com/trippyogi/agentlab-tenant-nectar
+Receipt: https://github.com/trippyogi/agentlab-tenant-nectar
 ### Genesis Launch System
 Smart contract, generative 3D pipeline, rendering, metadata, and delivery for the MetaTravelers digital launch.
 Outcome: Sold out in 15 minutes.
@@ -19,11 +34,6 @@ Outcome: 673 Kickstarter backers and over 10k units shipped internationally acro
 Live: https://shopmetatravelers.com
 Receipt: https://www.kickstarter.com/projects/metatravelers/legendari-action-figures
 Receipt: https://shopmetatravelers.com
-### Baton
-Ranking engine for human attention in multi-agent systems.
-Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
-Source: https://github.com/trippyogi/baton
-Receipt: https://github.com/trippyogi/baton
 ### Company Second Brain
 Agent-side operating layer for reports, support replies, and content drafts with human approval.
 Outcome: Every report, support reply, and content draft starts agent-side; humans approve, not assemble.

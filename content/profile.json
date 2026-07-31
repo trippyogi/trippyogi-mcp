@@ -8,6 +8,11 @@
     "location": "San Diego, CA",
     "url": "https://www.trippyogi.com",
     "email": "peace@trippyogi.com",
+    "alumniOf": {
+      "name": "University of California, San Diego",
+      "url": "https://ucsd.edu",
+      "degree": "B.S., Mechanical and Aerospace Engineering"
+    },
     "sameAs": [
       "https://github.com/trippyogi",
       "https://www.linkedin.com/in/jmckeehen",
@@ -24,15 +29,65 @@
   },
   "projects": [
     {
+      "id": "baton",
+      "name": "Baton",
+      "status": "active",
+      "years": "2026",
+      "summary": "Ranking engine for human attention in multi-agent systems.",
+      "outcome": "Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.",
+      "problem": "Multi-agent systems need a durable way to rank and route human attention instead of treating every interrupt as equal.",
+      "sourceUrl": "https://github.com/trippyogi/baton",
+      "packageUrl": null,
+      "liveUrl": null,
+      "programmingLanguage": ["TypeScript"],
+      "receiptUrls": [
+        "https://github.com/trippyogi/baton"
+      ]
+    },
+    {
+      "id": "gitworthy",
+      "name": "gitworthy",
+      "status": "active",
+      "years": "2026",
+      "summary": "Issue and contribution ranking surfaces for GitHub orgs — find high-value work worth doing.",
+      "outcome": "Public MCP and scan tooling used to triage open-source contribution targets.",
+      "problem": "Open-source contribution opportunity is noisy; this ranks issues and repos by worth.",
+      "sourceUrl": "https://github.com/trippyogi/gitworthy",
+      "packageUrl": null,
+      "liveUrl": null,
+      "programmingLanguage": ["TypeScript"],
+      "receiptUrls": [
+        "https://github.com/trippyogi/gitworthy"
+      ]
+    },
+    {
+      "id": "nectar",
+      "name": "nectar",
+      "status": "active",
+      "years": "2026",
+      "summary": "Agentlab tenant surface for nectar — agent-readable product and ops context.",
+      "outcome": "Shipped as a tenant package in the agentlab stack.",
+      "problem": "Agent systems need tenant-scoped, inspectable surfaces instead of opaque prompt bags.",
+      "sourceUrl": "https://github.com/trippyogi/agentlab-tenant-nectar",
+      "packageUrl": null,
+      "liveUrl": null,
+      "programmingLanguage": ["TypeScript"],
+      "receiptUrls": [
+        "https://github.com/trippyogi/agentlab-tenant-nectar"
+      ]
+    },
+    {
       "id": "genesis-launch",
       "name": "Genesis Launch System",
       "status": "shipped",
       "years": "2021",
       "summary": "Smart contract, generative 3D pipeline, rendering, metadata, and delivery for the MetaTravelers digital launch.",
       "outcome": "Sold out in 15 minutes.",
+      "problem": "Ship a complete digital collectible launch without a large engineering org.",
       "sourceUrl": null,
       "packageUrl": null,
       "liveUrl": null,
+      "programmingLanguage": ["Solidity", "TypeScript"],
       "receiptUrls": [
         "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
       ]
@@ -44,26 +99,14 @@
       "years": "2023–26",
       "summary": "Physical Legendari action figure line: design partners, manufacturing, crowdfunding, and international fulfillment.",
       "outcome": "673 Kickstarter backers and over 10k units shipped internationally across 22 countries.",
+      "problem": "Move an original IP from digital launch into a physical collector product with real fulfillment.",
       "sourceUrl": null,
       "packageUrl": null,
       "liveUrl": "https://shopmetatravelers.com",
+      "programmingLanguage": [],
       "receiptUrls": [
         "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures",
         "https://shopmetatravelers.com"
-      ]
-    },
-    {
-      "id": "baton",
-      "name": "Baton",
-      "status": "active",
-      "years": "2026",
-      "summary": "Ranking engine for human attention in multi-agent systems.",
-      "outcome": "Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.",
-      "sourceUrl": "https://github.com/trippyogi/baton",
-      "packageUrl": null,
-      "liveUrl": null,
-      "receiptUrls": [
-        "https://github.com/trippyogi/baton"
       ]
     },
     {
@@ -73,9 +116,11 @@
       "years": "2025–26",
       "summary": "Agent-side operating layer for reports, support replies, and content drafts with human approval.",
       "outcome": "Every report, support reply, and content draft starts agent-side; humans approve, not assemble.",
+      "problem": "A two-person company needs leverage without losing approval control on brand, money, and support.",
       "sourceUrl": null,
       "packageUrl": null,
       "liveUrl": null,
+      "programmingLanguage": ["TypeScript"],
       "receiptUrls": []
     },
     {
@@ -85,9 +130,11 @@
       "years": "2023–26",
       "summary": "Shopify storefront supporting international collector commerce.",
       "outcome": "Storefront supporting international collector commerce across 22 countries.",
+      "problem": "Sell and fulfill collector product internationally without a dedicated commerce team.",
       "sourceUrl": null,
       "packageUrl": null,
       "liveUrl": "https://shopmetatravelers.com",
+      "programmingLanguage": [],
       "receiptUrls": [
         "https://shopmetatravelers.com"
       ]
@@ -139,7 +186,25 @@
       "linkedin": "https://www.linkedin.com/in/jmckeehen",
       "github": "https://github.com/trippyogi",
       "site": "https://www.trippyogi.com",
-      "resume": "https://www.trippyogi.com/resume"
+      "resume": "https://www.trippyogi.com/resume",
+      "mcp": "https://www.trippyogi.com/mcp"
+    }
+  },
+  "pages": {
+    "home": {
+      "path": "/",
+      "title": "Jeremy McKeehen · From code to plastic.",
+      "summary": "Technical founder and product engineer. Co-founder of MetaTravelers: motion comics, sold-out digital launch, Legendari figures, AI-first ops."
+    },
+    "metatravelers": {
+      "path": "/metatravelers",
+      "title": "Case File MT-001 · MetaTravelers",
+      "summary": "Four-act build record: origin, digital launch, physical pivot, AI-first rebuild."
+    },
+    "resume": {
+      "path": "/resume",
+      "title": "Resume",
+      "summary": "PDF resume plus machine-readable Markdown twin at /resume.md."
     }
   }
 }

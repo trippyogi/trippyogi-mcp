@@ -27,9 +27,11 @@ export interface Project {
   years: string;
   summary: string;
   outcome: string;
+  problem?: string;
   sourceUrl: string | null;
   packageUrl: string | null;
   liveUrl: string | null;
+  programmingLanguage?: string[];
   receiptUrls: string[];
 }
 
@@ -53,6 +55,11 @@ export interface Profile {
     location: string;
     url: string;
     email: string;
+    alumniOf?: {
+      name: string;
+      url: string;
+      degree: string;
+    };
     sameAs: string[];
     knowsAbout: string[];
   };
@@ -68,8 +75,10 @@ export interface Profile {
       github: string;
       site: string;
       resume: string;
+      mcp?: string;
     };
   };
+  pages?: Record<string, { path: string; title: string; summary: string }>;
 }
 
 export interface VerifyClaimResult {

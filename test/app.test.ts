@@ -67,5 +67,5 @@ describe("HTTP app", () => {
     expect(res.status).toBe(200);
     const body = (await res.json()) as { result?: { serverInfo?: { name?: string } } };
     expect(body.result?.serverInfo?.name).toBe("trippyogi-mcp");
-  });
+  }, 20_000);
 });

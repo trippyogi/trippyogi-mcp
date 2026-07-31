@@ -1,5 +1,26 @@
 # Projects
 
+## Baton
+- Status: active
+- Years: 2026
+- Summary: Ranking engine for human attention in multi-agent systems.
+- Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
+- Source: https://github.com/trippyogi/baton
+- Receipt: https://github.com/trippyogi/baton
+## gitworthy
+- Status: active
+- Years: 2026
+- Summary: Issue and contribution ranking surfaces for GitHub orgs — find high-value work worth doing.
+- Outcome: Public MCP and scan tooling used to triage open-source contribution targets.
+- Source: https://github.com/trippyogi/gitworthy
+- Receipt: https://github.com/trippyogi/gitworthy
+## nectar
+- Status: active
+- Years: 2026
+- Summary: Agentlab tenant surface for nectar — agent-readable product and ops context.
+- Outcome: Shipped as a tenant package in the agentlab stack.
+- Source: https://github.com/trippyogi/agentlab-tenant-nectar
+- Receipt: https://github.com/trippyogi/agentlab-tenant-nectar
 ## Genesis Launch System
 - Status: shipped
 - Years: 2021
@@ -14,13 +35,6 @@
 - Live: https://shopmetatravelers.com
 - Receipt: https://www.kickstarter.com/projects/metatravelers/legendari-action-figures
 - Receipt: https://shopmetatravelers.com
-## Baton
-- Status: active
-- Years: 2026
-- Summary: Ranking engine for human attention in multi-agent systems.
-- Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
-- Source: https://github.com/trippyogi/baton
-- Receipt: https://github.com/trippyogi/baton
 ## Company Second Brain
 - Status: active
 - Years: 2025–26
