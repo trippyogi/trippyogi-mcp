@@ -1,9 +1,7 @@
 import { Hono } from "hono";
-import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import type { AppConfig } from "./config.js";
 import { loadConfig } from "./config.js";
 import { loadClaims, loadProfile } from "./content/load.js";
-import { createMcpServer } from "./mcp/server.js";
 import { allowedHostsMiddleware } from "./middleware/allowedHosts.js";
 import { rateLimitMiddleware } from "./middleware/rateLimit.js";
 import type { ClaimRecord, Profile } from "./types.js";
@@ -37,6 +35,11 @@ export function createApp(dependencies: AppDependencies = {}) {
   app.use("/mcp", rateLimitMiddleware(config));
 
   app.all("/mcp", async (c) => {
+    const [{ createMcpServer }, { WebStandardStreamableHTTPServerTransport }] = await Promise.all([
+      import("./mcp/server.js"),
+      import("@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js")
+    ]);
+
     const accept = c.req.header("accept") ?? "";
     let request = c.req.raw;
     if (accept && !accept.includes("text/event-stream") && accept.includes("application/json")) {
