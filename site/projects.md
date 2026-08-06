@@ -4,7 +4,7 @@
 - Status: active
 - Years: 2026
 - Summary: Ranking engine for human attention in multi-agent systems.
-- Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
+- Outcome: Open source (MIT) on GitHub.
 - Source: https://github.com/trippyogi/baton
 - Receipt: https://github.com/trippyogi/baton
 ## gitworthy
@@ -25,7 +25,7 @@
 - Status: shipped
 - Years: 2021
 - Summary: Smart contract, generative 3D pipeline, rendering, metadata, and delivery for the MetaTravelers digital launch.
-- Outcome: Sold out in 15 minutes.
+- Outcome: Sold 7,777 units over a three-day mint; the final public tranche of 2,935 cleared in 15 minutes.
 - Receipt: https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5
 ## Legendari Production & Fulfillment
 - Status: shipped
