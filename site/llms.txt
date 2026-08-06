@@ -11,7 +11,7 @@ MCP: https://www.trippyogi.com/mcp
 ## Projects
 ### Baton
 Ranking engine for human attention in multi-agent systems.
-Outcome: Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.
+Outcome: Open source (MIT) on GitHub.
 Source: https://github.com/trippyogi/baton
 Receipt: https://github.com/trippyogi/baton
 ### gitworthy
@@ -26,7 +26,7 @@ Source: https://github.com/trippyogi/agentlab-tenant-nectar
 Receipt: https://github.com/trippyogi/agentlab-tenant-nectar
 ### Genesis Launch System
 Smart contract, generative 3D pipeline, rendering, metadata, and delivery for the MetaTravelers digital launch.
-Outcome: Sold out in 15 minutes.
+Outcome: Sold 7,777 units over a three-day mint; the final public tranche of 2,935 cleared in 15 minutes.
 Receipt: https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5
 ### Legendari Production & Fulfillment
 Physical Legendari action figure line: design partners, manufacturing, crowdfunding, and international fulfillment.
@@ -62,8 +62,8 @@ Two years of full-stack engineering on the Everest and K2 fund-accounting platfo
 - Owned frontline production support for private-equity and fund-accounting clients, converting recurring tickets into reproducible bug reports and permanent fixes with engineering.
 
 ## Availability
-Looking for founder-mode product engineering: AI-first product teams, commerce platforms, and zero-to-one environments where ownership beats job descriptions.
-Best fit: AI product engineer, Product engineer, Founding engineer, Commerce systems, Agentic internal tools
+Looking for product engineering roles with wide scope: AI-first product teams, commerce platforms, and zero-to-one environments where ownership beats job descriptions.
+Best fit: Forward deployed engineer, AI product engineer, Founding engineer, Product engineer, Commerce systems, Agentic internal tools
 
 ## Agent surfaces
 - /llms.txt

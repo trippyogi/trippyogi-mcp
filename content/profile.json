@@ -34,7 +34,7 @@
       "status": "active",
       "years": "2026",
       "summary": "Ranking engine for human attention in multi-agent systems.",
-      "outcome": "Open source (MIT). Runs in daily production coordinating agent workflows behind MetaTravelers.",
+      "outcome": "Open source (MIT) on GitHub.",
       "problem": "Multi-agent systems need a durable way to rank and route human attention instead of treating every interrupt as equal.",
       "sourceUrl": "https://github.com/trippyogi/baton",
       "packageUrl": null,
@@ -88,7 +88,7 @@
       "status": "shipped",
       "years": "2021",
       "summary": "Smart contract, generative 3D pipeline, rendering, metadata, and delivery for the MetaTravelers digital launch.",
-      "outcome": "Sold out in 15 minutes.",
+      "outcome": "Sold 7,777 units over a three-day mint; the final public tranche of 2,935 cleared in 15 minutes.",
       "problem": "Ship a complete digital collectible launch without a large engineering org.",
       "sourceUrl": null,
       "packageUrl": null,
@@ -505,16 +505,17 @@
     }
   ],
   "availability": {
-    "seeking": "Looking for founder-mode product engineering: AI-first product teams, commerce platforms, and zero-to-one environments where ownership beats job descriptions.",
+    "seeking": "Looking for product engineering roles with wide scope: AI-first product teams, commerce platforms, and zero-to-one environments where ownership beats job descriptions.",
     "bestFit": [
+      "Forward deployed engineer",
       "AI product engineer",
-      "Product engineer",
       "Founding engineer",
+      "Product engineer",
       "Commerce systems",
       "Agentic internal tools"
     ],
     "workModes": [
-      "Founder-mode ownership",
+      "Wide-scope ownership",
       "Remote-friendly",
       "San Diego based"
     ],
