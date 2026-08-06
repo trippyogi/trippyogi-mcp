@@ -1,4 +1,4 @@
-import type { ClaimRecord, VerifyClaimResult } from "../types.js";
+import type { ClaimRecord, PublicClaimStatus, VerifyClaimResult } from "../types.js";
 
 const STOPWORDS = new Set([
   "a",
@@ -80,7 +80,7 @@ export function tokenize(input: string): Set<string> {
 }
 
 function claimNumbers(claim: ClaimRecord): number[] {
-  return claim.numbers ?? extractNumbers([claim.text, ...(claim.aliases ?? [])].join(" "));
+  return extractNumbers([claim.claim, ...(claim.aliases ?? [])].join(" "));
 }
 
 function numbersConflict(queryNums: number[], claimNums: number[]): boolean {
@@ -89,7 +89,7 @@ function numbersConflict(queryNums: number[], claimNums: number[]): boolean {
 }
 
 function candidates(claim: ClaimRecord): string[] {
-  return [claim.text, ...(claim.aliases ?? [])];
+  return [claim.claim, ...(claim.aliases ?? [])];
 }
 
 function exactNormalizedMatch(query: string, claim: ClaimRecord): boolean {
@@ -118,15 +118,15 @@ function subsetCoverageMatch(query: string, claim: ClaimRecord): boolean {
   return false;
 }
 
-function notVerifiable(claim: string, unsupported: string, estimate = false): VerifyClaimResult {
+function notVerifiable(claim: string, scope: string): VerifyClaimResult {
   return {
-    verdict: "not_verifiable",
+    status: "not_verifiable",
     claim,
     matchedClaim: null,
-    supported: null,
-    unsupported,
-    estimate,
-    evidence: []
+    receipts: [],
+    receipt_type: "none",
+    scope,
+    notes: null
   };
 }
 
@@ -136,30 +136,34 @@ export function matchClaim(query: string, claims: ClaimRecord[]): VerifyClaimRes
     return notVerifiable(query, "Empty claim.");
   }
 
-  for (const claim of claims) {
+  const publicClaims = claims.filter(
+    (claim): claim is ClaimRecord & { status: PublicClaimStatus } => claim.status !== "retired"
+  );
+
+  for (const claim of publicClaims) {
     if (!exactNormalizedMatch(trimmed, claim)) continue;
     if (numbersConflict(extractNumbers(trimmed), claimNumbers(claim))) continue;
     return {
-      verdict: claim.verdict,
+      status: claim.status,
       claim: trimmed,
-      matchedClaim: claim.text,
-      supported: claim.supported,
-      unsupported: claim.unsupported,
-      estimate: claim.estimate,
-      evidence: claim.evidence
+      matchedClaim: claim.claim,
+      receipts: claim.receipts,
+      receipt_type: claim.receipt_type,
+      scope: claim.scope ?? null,
+      notes: claim.notes ?? null
     };
   }
 
-  for (const claim of claims) {
+  for (const claim of publicClaims) {
     if (!subsetCoverageMatch(trimmed, claim)) continue;
     return {
-      verdict: claim.verdict,
+      status: claim.status,
       claim: trimmed,
-      matchedClaim: claim.text,
-      supported: claim.supported,
-      unsupported: claim.unsupported,
-      estimate: claim.estimate,
-      evidence: claim.evidence
+      matchedClaim: claim.claim,
+      receipts: claim.receipts,
+      receipt_type: claim.receipt_type,
+      scope: claim.scope ?? null,
+      notes: claim.notes ?? null
     };
   }
 

@@ -1,23 +1,18 @@
-export type EvidenceKind = "independent" | "primary" | "self";
-
-export interface Evidence {
-  label: string;
-  url: string;
-  kind: EvidenceKind;
-}
-
-export type Verdict = "verified" | "partially_verified" | "not_verifiable";
+export type ClaimStatus = "verified" | "partially_verified" | "not_verifiable" | "retired";
+export type PublicClaimStatus = Exclude<ClaimStatus, "retired">;
+export type ReceiptType = "external" | "self_hosted" | "none";
 
 export interface ClaimRecord {
   id: string;
-  text: string;
+  claim: string;
   aliases?: string[];
-  verdict: Verdict;
-  supported: string | null;
-  unsupported: string | null;
-  estimate: boolean;
-  numbers?: number[];
-  evidence: Evidence[];
+  status: ClaimStatus;
+  receipts: string[];
+  receipt_type: ReceiptType;
+  scope?: string;
+  notes?: string;
+  superseded_by?: string;
+  verified_at?: string;
 }
 
 export interface Project {
@@ -82,11 +77,11 @@ export interface Profile {
 }
 
 export interface VerifyClaimResult {
-  verdict: Verdict;
+  status: PublicClaimStatus;
   claim: string;
   matchedClaim: string | null;
-  supported: string | null;
-  unsupported: string | null;
-  estimate: boolean;
-  evidence: Evidence[];
+  receipts: string[];
+  receipt_type: ReceiptType;
+  scope: string | null;
+  notes: string | null;
 }

@@ -1,133 +1,140 @@
 [
   {
+    "id": "metatravelers-launch",
+    "claim": "Sold out 7,777 units to 2,689 unique buyers; final 2,935 cleared in 15 minutes.",
+    "aliases": [
+      "MetaTravelers launch",
+      "7,777 units to 2,689 unique buyers",
+      "final 2,935 cleared in 15 minutes"
+    ],
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "The public Dune query derives the launch supply, unique buyers, mint window, public tranche, sustained rate, and peak minute from Ethereum transaction data. Public burst 20:01:00-20:15:18 UTC 2021-11-22; presale ran Nov 19-21.",
+    "launch": {
+      "supply": 7777,
+      "uniqueBuyers": 2689,
+      "mintWindow": {
+        "start": "2021-11-19T17:37:59Z",
+        "end": "2021-11-22T20:15:18Z"
+      },
+      "presaleUnitsApprox": 3728,
+      "finalDayUnits": 4049,
+      "publicBurst": {
+        "units": 2935,
+        "start": "2021-11-22T20:01:00Z",
+        "end": "2021-11-22T20:15:18Z",
+        "durationSeconds": 918
+      },
+      "sustainedMintsPerMinuteApprox": 195,
+      "peakMinute": {
+        "units": 386,
+        "at": "2021-11-22T20:03:00Z"
+      },
+      "chain": "Ethereum",
+      "contract": "0x5372f926b34Be60aC1436372107C3eE8c6e056E5",
+      "queryUrl": "https://dune.com/queries/8236840/12231724/",
+      "embedUrl": "https://dune.com/embeds/8236840/12231724"
+    },
+    "scope": "This compound wording implies all 7,777 units sold in 15 minutes; only the final public tranche of 2,935 did.",
+    "superseded_by": "resume-final-public-tranche-contained-2-935-units"
+  },
+  {
     "id": "kickstarter-backers",
-    "text": "Legendari was backed by 673 Kickstarter backers who pledged $190,292 against a $125,000 goal.",
+    "claim": "Legendari was backed by 673 Kickstarter backers who pledged $190,292 against a $125,000 goal.",
     "aliases": [
       "Legendari had 673 Kickstarter backers",
       "673 Kickstarter backers",
       "673 backers"
     ],
-    "verdict": "verified",
-    "supported": "Kickstarter publicly reports the backer count, pledged amount, and campaign goal.",
-    "unsupported": null,
-    "estimate": false,
-    "numbers": [673, 190292, 125000],
-    "evidence": [
-      {
-        "label": "Legendari Kickstarter",
-        "url": "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures",
-        "kind": "independent"
-      }
-    ]
+    "status": "verified",
+    "receipts": [
+      "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures"
+    ],
+    "receipt_type": "external",
+    "notes": "Kickstarter publicly reports the backer count, pledged amount, and campaign goal.",
+    "verified_at": "2026-08-06"
   },
   {
     "id": "collectibles-minted",
-    "text": "7,777 collectibles were minted on the public Ethereum contract.",
+    "claim": "7,777 collectibles were minted on the public Ethereum contract.",
     "aliases": [
       "7777 collectibles minted",
       "7,777 minted",
       "minted 7777"
     ],
-    "verdict": "verified",
-    "supported": "The public contract address is published and inspectable on Etherscan.",
-    "unsupported": null,
-    "estimate": false,
-    "numbers": [7777],
-    "evidence": [
-      {
-        "label": "Genesis contract on Etherscan",
-        "url": "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5",
-        "kind": "independent"
-      }
-    ]
+    "status": "verified",
+    "receipts": [
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The public contract address is published and inspectable on Etherscan.",
+    "verified_at": "2026-08-06"
   },
   {
     "id": "sellout-15-min",
-    "text": "The digital launch sold out in 15 minutes.",
+    "claim": "The digital launch sold out in 15 minutes.",
     "aliases": [
       "sold out in 15 minutes",
       "15 min sellout",
       "15 minute sellout"
     ],
-    "verdict": "partially_verified",
-    "supported": "The public mint contract and supply (7,777) are inspectable on Etherscan.",
-    "unsupported": "Exact sellout duration is founder-asserted and is not independently timestamped by a single public receipt in this corpus.",
-    "estimate": false,
-    "numbers": [15, 7777],
-    "evidence": [
-      {
-        "label": "Genesis contract on Etherscan",
-        "url": "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5",
-        "kind": "independent"
-      }
-    ]
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "The complete mint lasted three days; only the final public tranche cleared in about 15 minutes.",
+    "notes": "The public mint contract and supply (7,777) are inspectable on Etherscan.",
+    "superseded_by": "resume-final-2-935-units-cleared-15-minutes"
   },
   {
     "id": "units-shipped",
-    "text": "Over 10,000 Legendari units have been shipped internationally across 22 countries.",
+    "claim": "Over 10,000 Legendari units have been shipped internationally across 22 countries.",
     "aliases": [
       "10k+ units shipped",
       "10000 units shipped",
       "22 countries shipped",
       "shipped across 22 countries"
     ],
-    "verdict": "partially_verified",
-    "supported": "The Shopify storefront is public and active for collector commerce.",
-    "unsupported": "A public shipment ledger or country export is not linked; unit and country counts remain operator-asserted.",
-    "estimate": false,
-    "numbers": [10000, 22],
-    "evidence": [
-      {
-        "label": "Shop MetaTravelers",
-        "url": "https://shopmetatravelers.com",
-        "kind": "primary"
-      },
-      {
-        "label": "Legendari Kickstarter",
-        "url": "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures",
-        "kind": "independent"
-      }
-    ]
+    "status": "partially_verified",
+    "receipts": [
+      "https://shopmetatravelers.com",
+      "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures"
+    ],
+    "receipt_type": "external",
+    "scope": "A public shipment ledger or country export is not linked; unit and country counts remain operator-asserted.",
+    "notes": "The Shopify storefront is public and active for collector commerce."
   },
   {
     "id": "baton-oss",
-    "text": "Baton is open source under MIT and runs in production for MetaTravelers agent workflows.",
+    "claim": "Baton is open source under MIT and runs in production for MetaTravelers agent workflows.",
     "aliases": [
       "Baton open source",
       "Baton MIT",
       "built Baton"
     ],
-    "verdict": "partially_verified",
-    "supported": "The public GitHub repository exists and can be inspected for license and code.",
-    "unsupported": "Daily production usage inside MetaTravelers is operator-asserted.",
-    "estimate": false,
-    "numbers": [],
-    "evidence": [
-      {
-        "label": "Baton repository",
-        "url": "https://github.com/trippyogi/baton",
-        "kind": "primary"
-      }
-    ]
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "The repository and MIT license are public, but the production-usage clause is false as written.",
+    "notes": "The public GitHub repository exists and can be inspected for license and code.",
+    "superseded_by": "resume-baton-ranking-engine"
   },
   {
     "id": "two-person-team",
-    "text": "MetaTravelers operates with two full-time humans.",
+    "claim": "MetaTravelers operates with two full-time humans.",
     "aliases": [
       "2 people full-time",
       "two-person company",
       "two person team"
     ],
-    "verdict": "not_verifiable",
-    "supported": null,
-    "unsupported": "Headcount is internal and has no public independent receipt.",
-    "estimate": false,
-    "numbers": [2],
-    "evidence": []
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Headcount is internal and has no public independent receipt."
   },
   {
     "id": "hours-saved",
-    "text": "Agent workflows save an estimated 180+ hours per month.",
+    "claim": "Agent workflows save an estimated 180+ hours per month.",
     "aliases": [
       "180+ hours/month",
       "180 hrs/mo",
@@ -135,141 +142,2003 @@
       "saving 180 hours per month",
       "180 hours per month"
     ],
-    "verdict": "not_verifiable",
-    "supported": null,
-    "unsupported": "This is an estimate of internal time saved; no public methodology or measurement receipt is published.",
-    "estimate": true,
-    "numbers": [180],
-    "evidence": []
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "This is an estimate of internal time saved; no public methodology or measurement receipt is published."
   },
   {
     "id": "allvue-qa",
-    "text": "At Allvue, Cucumber UI testing saved an estimated ~800 manual QA hours per cycle.",
+    "claim": "At Allvue, Cucumber UI testing saved an estimated ~800 manual QA hours per cycle.",
     "aliases": [
       "800 QA hours",
       "800 manual QA hours"
     ],
-    "verdict": "not_verifiable",
-    "supported": null,
-    "unsupported": "Former employer metrics are not backed by a public receipt in this corpus.",
-    "estimate": true,
-    "numbers": [800],
-    "evidence": []
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Former employer metrics are not backed by a public receipt in this corpus."
   },
   {
     "id": "metatravelers-cofounder",
-    "text": "Jeremy McKeehen co-founded MetaTravelers in 2021.",
+    "claim": "Jeremy McKeehen co-founded MetaTravelers in 2021.",
     "aliases": [
       "co-founded MetaTravelers in 2021",
       "co-founder of MetaTravelers",
       "MetaTravelers founded 2021"
     ],
-    "verdict": "partially_verified",
-    "supported": "The public site and case file consistently state the 2021 co-founder role.",
-    "unsupported": "No independent corporate registry filing is linked in this corpus.",
-    "estimate": false,
-    "numbers": [2021],
-    "evidence": [
-      {
-        "label": "trippyogi.com MetaTravelers case file",
-        "url": "https://www.trippyogi.com/metatravelers",
-        "kind": "self"
-      }
-    ]
+    "status": "partially_verified",
+    "receipts": [
+      "https://www.trippyogi.com/metatravelers"
+    ],
+    "receipt_type": "self_hosted",
+    "scope": "No independent corporate registry filing is linked in this corpus.",
+    "notes": "The public site and case file consistently state the 2021 co-founder role."
   },
   {
     "id": "allvue-role",
-    "text": "Software Engineer, Full Stack at Allvue Systems from March 2017 to February 2020.",
+    "claim": "Software Engineer, Full Stack at Allvue Systems from March 2017 to February 2020.",
     "aliases": [
       "Allvue Systems full stack",
       "Allvue 2017 to 2020",
       "worked at Allvue"
     ],
-    "verdict": "not_verifiable",
-    "supported": null,
-    "unsupported": "Former employer tenure is resume-asserted without a public third-party receipt in this corpus.",
-    "estimate": false,
-    "numbers": [2017, 2020],
-    "evidence": []
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Former employer tenure is resume-asserted without a public third-party receipt in this corpus."
   },
   {
     "id": "ucsd-degree",
-    "text": "B.S., Mechanical and Aerospace Engineering from UC San Diego.",
+    "claim": "B.S., Mechanical and Aerospace Engineering from UC San Diego.",
     "aliases": [
       "UCSD Mechanical and Aerospace Engineering",
       "UC San Diego B.S.",
       "alumni of UC San Diego"
     ],
-    "verdict": "not_verifiable",
-    "supported": null,
-    "unsupported": "Degree is self-published on the resume/site without a registrar verification link in this corpus.",
-    "estimate": false,
-    "numbers": [],
-    "evidence": []
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Degree is self-published on the resume/site without a registrar verification link in this corpus."
   },
   {
     "id": "legendari-articulation",
-    "text": "Legendari figures have up to 29 points of articulation.",
+    "claim": "Legendari figures have up to 29 points of articulation.",
     "aliases": [
       "29 points of articulation",
       "29 POA"
     ],
-    "verdict": "partially_verified",
-    "supported": "The public product marketing and storefront describe the articulation claim.",
-    "unsupported": "No independent teardown measurement is linked in this corpus.",
-    "estimate": false,
-    "numbers": [29],
-    "evidence": [
-      {
-        "label": "Shop MetaTravelers",
-        "url": "https://shopmetatravelers.com",
-        "kind": "primary"
-      }
-    ]
+    "status": "partially_verified",
+    "receipts": [
+      "https://shopmetatravelers.com"
+    ],
+    "receipt_type": "external",
+    "scope": "No independent teardown measurement is linked in this corpus.",
+    "notes": "The public product marketing and storefront describe the articulation claim."
   },
   {
     "id": "four-horsemen",
-    "text": "Legendari was designed with Four Horsemen Studios.",
+    "claim": "Legendari was designed with Four Horsemen Studios.",
     "aliases": [
       "designed with Four Horsemen Studios",
       "Four Horsemen Studios"
     ],
-    "verdict": "partially_verified",
-    "supported": "Public MetaTravelers marketing repeatedly credits Four Horsemen Studios.",
-    "unsupported": "No signed partner press release is linked in this corpus.",
-    "estimate": false,
-    "numbers": [],
-    "evidence": [
-      {
-        "label": "trippyogi.com MetaTravelers case file",
-        "url": "https://www.trippyogi.com/metatravelers",
-        "kind": "self"
-      },
-      {
-        "label": "Shop MetaTravelers",
-        "url": "https://shopmetatravelers.com",
-        "kind": "primary"
-      }
-    ]
+    "status": "partially_verified",
+    "receipts": [
+      "https://shopmetatravelers.com",
+      "https://www.trippyogi.com/metatravelers"
+    ],
+    "receipt_type": "external",
+    "scope": "No signed partner press release is linked in this corpus.",
+    "notes": "Public MetaTravelers marketing repeatedly credits Four Horsemen Studios."
   },
   {
     "id": "andy-lanning",
-    "text": "Legendari characters were written by Andy Lanning.",
+    "claim": "Legendari characters were written by Andy Lanning.",
     "aliases": [
       "written by Andy Lanning",
       "Andy Lanning"
     ],
-    "verdict": "partially_verified",
-    "supported": "Public MetaTravelers marketing credits Andy Lanning (Guardians of the Galaxy).",
-    "unsupported": "No independent writer credit database entry is linked in this corpus.",
-    "estimate": false,
-    "numbers": [],
-    "evidence": [
-      {
-        "label": "trippyogi.com MetaTravelers case file",
-        "url": "https://www.trippyogi.com/metatravelers",
-        "kind": "self"
-      }
-    ]
+    "status": "partially_verified",
+    "receipts": [
+      "https://www.trippyogi.com/metatravelers"
+    ],
+    "receipt_type": "self_hosted",
+    "scope": "No independent writer credit database entry is linked in this corpus.",
+    "notes": "Public MetaTravelers marketing credits Andy Lanning (Guardians of the Galaxy)."
+  },
+  {
+    "id": "third-party-oss-contributions",
+    "claim": "Merged contributions to third-party open-source repositories including dora, OpenClaw, hermes-agent, and RedisInsight.",
+    "aliases": [
+      "Merged contributions to third-party open-source repositories",
+      "third-party open-source contributions",
+      "open source contributions"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/NousResearch/hermes-agent/commit/a266155cc440cacf68faf891eca3e0885a1a8829",
+      "https://github.com/asyncart/artist-tools/pull/2",
+      "https://github.com/dora-rs/dora/pull/2960",
+      "https://github.com/openclaw/openclaw-windows-node/pull/1066",
+      "https://github.com/redis/RedisInsight/pull/6230",
+      "https://github.com/redis/RedisInsight/pull/6231"
+    ],
+    "receipt_type": "external",
+    "notes": "Each landed contribution has a public GitHub URL (merged PR or cherry-picked commit) in content/profile.json and /contributions.md. The numbers field is regenerated by sync-contributions from landed third-party rows.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "contrib-dora-rs-dora-2960",
+    "claim": "Merged dora-rs/dora#2960: fix(core): use non-verbatim /_schema key for zenoh liveliness",
+    "aliases": [
+      "dora-rs/dora#2960",
+      "fix(core): use non-verbatim /_schema key for zenoh liveliness"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/dora-rs/dora/pull/2960"
+    ],
+    "receipt_type": "external",
+    "notes": "Public GitHub pull request shows merged state.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "contrib-openclaw-openclaw-windows-node-1066",
+    "claim": "Merged openclaw/openclaw-windows-node#1066: fix(tray): browser control stuck without shared gateway token",
+    "aliases": [
+      "openclaw/openclaw-windows-node#1066",
+      "fix(tray): browser control stuck without shared gateway token"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/openclaw/openclaw-windows-node/pull/1066"
+    ],
+    "receipt_type": "external",
+    "notes": "Public GitHub pull request shows merged state.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "contrib-nousresearch-hermes-agent-75699",
+    "claim": "Cherry-picked NousResearch/hermes-agent#75699: fix(cli): untrack sqlite connections only after close succeeds",
+    "aliases": [
+      "NousResearch/hermes-agent#75699",
+      "fix(cli): untrack sqlite connections only after close succeeds"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/NousResearch/hermes-agent/commit/a266155cc440cacf68faf891eca3e0885a1a8829"
+    ],
+    "receipt_type": "external",
+    "notes": "Commit landed on the destination repository with authorship preserved; original PR was closed without a GitHub merge event.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "contrib-redis-redisinsight-6230",
+    "claim": "Merged redis/RedisInsight#6230: fix(instance): connect on deep-link to refresh modules",
+    "aliases": [
+      "redis/RedisInsight#6230",
+      "fix(instance): connect on deep-link to refresh modules"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/redis/RedisInsight/pull/6230"
+    ],
+    "receipt_type": "external",
+    "notes": "Public GitHub pull request shows merged state.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "contrib-redis-redisinsight-6231",
+    "claim": "Merged redis/RedisInsight#6231: fix: display WITHSUFFIXTRIE for RediSearch text fields",
+    "aliases": [
+      "redis/RedisInsight#6231",
+      "fix: display WITHSUFFIXTRIE for RediSearch text fields"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/redis/RedisInsight/pull/6231"
+    ],
+    "receipt_type": "external",
+    "notes": "Public GitHub pull request shows merged state.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "contrib-asyncart-artist-tools-2",
+    "claim": "Merged asyncart/artist-tools#2: Removed unused variable rp",
+    "aliases": [
+      "asyncart/artist-tools#2",
+      "Removed unused variable rp"
+    ],
+    "status": "verified",
+    "receipts": [
+      "https://github.com/asyncart/artist-tools/pull/2"
+    ],
+    "receipt_type": "external",
+    "notes": "Public GitHub pull request shows merged state.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "retired-webhook-driven-services",
+    "claim": "Jeremy built webhook-driven Shopify services for MetaTravelers.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "The integration used scheduled pull/API scripts through the Shopify GraphQL Admin API, not webhooks.",
+    "superseded_by": "resume-jeremy-experience-shopify-graphql-admin-api"
+  },
+  {
+    "id": "retired-shopify-storefront-api",
+    "claim": "Jeremy built Shopify Storefront API integrations for MetaTravelers.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "No Storefront API integration exists; the storefront uses the Dawn theme.",
+    "superseded_by": "resume-jeremy-experience-developing-shopify-liquid-themes"
+  },
+  {
+    "id": "retired-full-7777-sellout-15-minutes",
+    "claim": "The complete supply of 7,777 units sold out in approximately 15 minutes.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "The 7,777-unit mint ran for three days; the final public tranche of 2,935 cleared in about 15 minutes.",
+    "superseded_by": "resume-final-public-tranche-contained-2-935-units"
+  },
+  {
+    "id": "retired-2000-concurrent-users",
+    "claim": "The MetaTravelers launch served approximately 2,000 concurrent users.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Concurrency is not on-chain verifiable; 2,689 unique buyers is the supported figure.",
+    "superseded_by": "resume-launch-had-2-689-unique-buyers"
+  },
+  {
+    "id": "retired-baton-on-npm",
+    "claim": "Baton is published on npm.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Baton is available on GitHub only; gitworthy is published on npm and the MCP registry.",
+    "superseded_by": "resume-jeremy-built-baton"
+  },
+  {
+    "id": "retired-baton-daily-production",
+    "claim": "Baton is in daily production use.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "Baton is not in daily use.",
+    "superseded_by": "resume-baton-ranking-engine"
+  },
+  {
+    "id": "retired-anthropic-merged-contributions",
+    "claim": "Jeremy has merged contributions to Anthropic's claude-agent-sdk-typescript repository.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "One pull request closed unmerged; the other item was a code review rather than an authored pull request.",
+    "superseded_by": "third-party-oss-contributions"
+  },
+  {
+    "id": "crucible-private-rust-harness",
+    "claim": "Jeremy built Crucible, a custom Rust agent harness.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "The project is real but private, not open source, and not characterized as battle-tested. It is intentionally omitted from the résumé."
+  },
+  {
+    "id": "retired-28-prs-9-repos",
+    "claim": "Jeremy has 28 pull requests across nine repositories.",
+    "status": "retired",
+    "receipts": [],
+    "receipt_type": "none",
+    "scope": "The total mixes first-party work with third-party contributions; 14 were on Jeremy's own repository.",
+    "superseded_by": "third-party-oss-contributions"
+  },
+  {
+    "id": "resume-re-sume-belongs-jeremy-mckeehen",
+    "claim": "The résumé belongs to Jeremy McKeehen.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub profile identifies Jeremy McKeehen and the trippyogi account.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-full-stack-engineer",
+    "claim": "Jeremy is a full-stack engineer.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 2; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-specializes-commerce-systems",
+    "claim": "Jeremy specializes in commerce systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 3; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-builds-agent-tooling",
+    "claim": "Jeremy builds agent tooling.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 4; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-s-email-peace-trippyogi-com",
+    "claim": "Jeremy’s email is peace@trippyogi.com.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 5; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-s-phone-number-619-997-6792",
+    "claim": "Jeremy’s phone number is (619) 997-6792.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 6; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-based-san-diego-california",
+    "claim": "Jeremy is based in San Diego, California.",
+    "status": "verified",
+    "receipts": [
+      "https://www.linkedin.com/in/jmckeehen"
+    ],
+    "receipt_type": "external",
+    "notes": "The public LinkedIn profile identifies Jeremy, his San Diego location, and this profile URL.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-s-website-trippyogi-com",
+    "claim": "Jeremy’s website is trippyogi.com.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 8; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-s-linkedin-profile-linkedin-com-jmckeehen",
+    "claim": "Jeremy’s LinkedIn profile is linkedin.com/in/jmckeehen.",
+    "status": "verified",
+    "receipts": [
+      "https://www.linkedin.com/in/jmckeehen"
+    ],
+    "receipt_type": "external",
+    "notes": "The public LinkedIn profile identifies Jeremy, his San Diego location, and this profile URL.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-s-github-profile-github-com-trippyogi",
+    "claim": "Jeremy’s GitHub profile is github.com/trippyogi.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub profile identifies Jeremy McKeehen and the trippyogi account.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-been-sole-engineer-metatravelers-five-years",
+    "claim": "Jeremy has been the sole engineer at MetaTravelers for five years.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 11; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-metatravelers-commerce-systems",
+    "claim": "Jeremy built MetaTravelers’ commerce systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 12; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-metatravelers-order-routing-systems",
+    "claim": "Jeremy built MetaTravelers’ order-routing systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 13; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-metatravelers-attribution-systems",
+    "claim": "Jeremy built MetaTravelers’ attribution systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 14; pending receipt verification."
+  },
+  {
+    "id": "resume-metatravelers-operates-physical-product-business",
+    "claim": "MetaTravelers operates a physical-product business.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 15; pending receipt verification."
+  },
+  {
+    "id": "resume-metatravelers-shipped-products-into-22-countries",
+    "claim": "MetaTravelers has shipped products into 22 countries.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 16; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-spent-two-years-full-stack-engineer-allvue",
+    "claim": "Jeremy spent two years as a full-stack engineer at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 17; pending receipt verification."
+  },
+  {
+    "id": "resume-allvue-s-product-was-fintech-platform",
+    "claim": "Allvue’s product was a fintech platform.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 18; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-spent-one-year-frontline-production-support-before-becoming",
+    "claim": "Jeremy spent one year in frontline production support before becoming a full-stack engineer at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 19; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-s-production-support-clients-included-private-equity-clients",
+    "claim": "Jeremy’s production-support clients included private-equity clients.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 20; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-publishes-open-source-developer-tooling",
+    "claim": "Jeremy publishes open-source developer tooling.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/gitworthy",
+      "https://github.com/trippyogi/baton"
+    ],
+    "receipt_type": "external",
+    "notes": "Public repositories expose Jeremy-authored open-source developer tools.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-contributed-redis",
+    "claim": "Jeremy has contributed to Redis.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/redis/RedisInsight/pull/6230",
+      "https://github.com/redis/RedisInsight/pull/6231",
+      "https://github.com/redis/RedisInsight/pull/6232"
+    ],
+    "receipt_type": "external",
+    "notes": "Public GitHub pull requests show merged RedisInsight contributions authored by trippyogi.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-contributed-gazebo",
+    "claim": "Jeremy has contributed to Gazebo.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/gazebosim/gz-sim/pull/3863"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in gazebosim/gz-sim.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-contributed-ros",
+    "claim": "Jeremy has contributed to ROS.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/ros-controls/ros2_controllers/pull/2523"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in ros-controls/ros2_controllers.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-contributed-openclaw",
+    "claim": "Jeremy has contributed to OpenClaw.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/openclaw/openclaw-windows-node/pull/1066"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in openclaw/openclaw-windows-node.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-experience-shopify-graphql-admin-api",
+    "claim": "Jeremy has experience with the Shopify GraphQL Admin API.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 26; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-developing-shopify-liquid-themes",
+    "claim": "Jeremy has experience developing Shopify Liquid themes.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 27; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-working-oauth-scopes",
+    "claim": "Jeremy has experience working with OAuth scopes.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 28; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-working-application-credentials",
+    "claim": "Jeremy has experience working with application credentials.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 29; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-reconciling-data-across-multiple-systems",
+    "claim": "Jeremy has experience reconciling data across multiple systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 30; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-building-scheduled-data-pipelines",
+    "claim": "Jeremy has experience building scheduled data pipelines.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 31; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-performing-data-migrations",
+    "claim": "Jeremy has experience performing data migrations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 32; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-integrating-third-party-apis",
+    "claim": "Jeremy has experience integrating third-party APIs.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 33; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-integrated-third-party-apis-scale",
+    "claim": "Jeremy has integrated third-party APIs at scale.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 34; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-typescript",
+    "claim": "Jeremy works with TypeScript.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 35; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-javascript",
+    "claim": "Jeremy works with JavaScript.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 36; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-react",
+    "claim": "Jeremy works with React.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 37; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-next-js",
+    "claim": "Jeremy works with Next.js.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 38; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-node-js",
+    "claim": "Jeremy works with Node.js.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 39; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-python",
+    "claim": "Jeremy works with Python.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 40; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-c",
+    "claim": "Jeremy works with C#.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 41; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-net",
+    "claim": "Jeremy works with .NET.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 42; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-sql",
+    "claim": "Jeremy works with SQL.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 43; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-mongodb",
+    "claim": "Jeremy works with MongoDB.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 44; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-solidity",
+    "claim": "Jeremy works with Solidity.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 45; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-aws-ec2",
+    "claim": "Jeremy works with AWS EC2.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 46; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-aws-s3",
+    "claim": "Jeremy works with AWS S3.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 47; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-aws-lambda",
+    "claim": "Jeremy works with AWS Lambda.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 48; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-aws-iam",
+    "claim": "Jeremy works with AWS IAM.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 49; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-cloudflare",
+    "claim": "Jeremy works with Cloudflare.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 50; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-docker",
+    "claim": "Jeremy works with Docker.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 51; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-works-ci-cd-systems",
+    "claim": "Jeremy works with CI/CD systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 52; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-debugging-production-systems",
+    "claim": "Jeremy has experience debugging production systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 53; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-test-automation",
+    "claim": "Jeremy has experience with test automation.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 54; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-production-agent-workflows",
+    "claim": "Jeremy has built production agent workflows.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 55; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-orchestrating-multiple-agents",
+    "claim": "Jeremy has experience orchestrating multiple agents.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 56; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-coordinating-multiple-agents",
+    "claim": "Jeremy has experience coordinating multiple agents.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 57; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-evaluation-harnesses",
+    "claim": "Jeremy has built evaluation harnesses.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 58; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-adversarial-evaluations",
+    "claim": "Jeremy has built adversarial evaluations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 59; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-mcp-servers",
+    "claim": "Jeremy has built MCP servers.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 60; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-connectors",
+    "claim": "Jeremy has built connectors.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 61; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-routed-work-across-local-frontier-models",
+    "claim": "Jeremy has routed work across local and frontier models.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 62; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-designed-human-loop-review-systems",
+    "claim": "Jeremy has designed human-in-the-loop review systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 63; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-prompt-engineering",
+    "claim": "Jeremy has experience with prompt engineering.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 64; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-experience-context-engineering",
+    "claim": "Jeremy has experience with context engineering.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 65; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-implemented-tool-calling",
+    "claim": "Jeremy has implemented tool calling.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 66; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-implemented-function-calling",
+    "claim": "Jeremy has implemented function calling.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 67; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-retrieval-systems",
+    "claim": "Jeremy has worked with retrieval systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 68; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-vector-search",
+    "claim": "Jeremy has worked with vector search.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 69; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-co-founder-metatravelers",
+    "claim": "Jeremy is a co-founder of MetaTravelers.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 70; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-metatravelers-technical-founder",
+    "claim": "Jeremy is MetaTravelers’ technical founder.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 71; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-began-metatravelers-role-2021",
+    "claim": "Jeremy began the MetaTravelers role in 2021.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 72; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-continues-work-metatravelers",
+    "claim": "Jeremy continues to work at MetaTravelers.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 73; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-systems-supporting-more-than-10-000-shipped",
+    "claim": "Jeremy built systems supporting more than 10,000 shipped physical units.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 74; pending receipt verification."
+  },
+  {
+    "id": "resume-physical-units-were-shipped-22-countries",
+    "claim": "Those physical units were shipped to 22 countries.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 75; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-order-routing-system",
+    "claim": "Jeremy built an order-routing system.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 76; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-order-transformation-system",
+    "claim": "Jeremy built an order-transformation system.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 77; pending receipt verification."
+  },
+  {
+    "id": "resume-order-routing-transformation-system-feeds-third-party-logistics-provider",
+    "claim": "The order-routing and transformation system feeds a third-party logistics provider.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 78; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-configured-shopify-fulfillment-automation",
+    "claim": "Jeremy configured Shopify fulfillment automation.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 79; pending receipt verification."
+  },
+  {
+    "id": "resume-shopify-fulfillment-automation-operates-top-order-routing-transformation-system",
+    "claim": "The Shopify fulfillment automation operates on top of the order-routing and transformation system.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 80; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-shopify-graphql-admin-api-integration-support-order",
+    "claim": "Jeremy built a Shopify GraphQL Admin API integration for support order lookup.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 81; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-shopify-graphql-admin-api-integration-paid-attribution",
+    "claim": "Jeremy built a Shopify GraphQL Admin API integration for paid-attribution reconciliation.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 82; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-architected-metatravelers-digital-launch-system",
+    "claim": "Jeremy architected the MetaTravelers digital launch system.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 83; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-shipped-metatravelers-digital-launch-system",
+    "claim": "Jeremy shipped the MetaTravelers digital launch system.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 84; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-system-included-smart-contracts",
+    "claim": "The launch system included smart contracts.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 85; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-system-included-frontend",
+    "claim": "The launch system included a frontend.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 86; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-system-included-3d-generation",
+    "claim": "The launch system included 3D generation.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 87; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-system-included-automated-rendering",
+    "claim": "The launch system included automated rendering.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 88; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-system-included-cloud-infrastructure",
+    "claim": "The launch system included cloud infrastructure.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 89; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-system-included-delivery-systems",
+    "claim": "The launch system included delivery systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 90; pending receipt verification."
+  },
+  {
+    "id": "resume-launch-sold-7-777-units",
+    "claim": "The launch sold 7,777 units.",
+    "status": "verified",
+    "receipts": [
+      "https://dune.com/queries/8236840/12231724/",
+      "https://dune.com/embeds/8236840/12231724",
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The public on-chain analysis reports a total mint supply of 7,777.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-launch-had-2-689-unique-buyers",
+    "claim": "The launch had 2,689 unique buyers.",
+    "status": "verified",
+    "receipts": [
+      "https://dune.com/queries/8236840/12231724/",
+      "https://dune.com/embeds/8236840/12231724",
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The public on-chain analysis reports 2,689 unique buyers.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-final-public-tranche-contained-2-935-units",
+    "claim": "The final public tranche contained 2,935 units.",
+    "status": "verified",
+    "receipts": [
+      "https://dune.com/queries/8236840/12231724/",
+      "https://dune.com/embeds/8236840/12231724",
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The public on-chain analysis identifies a final public burst of 2,935 mints.",
+    "verified_at": "2026-08-06",
+    "launch": {
+      "supply": 7777,
+      "uniqueBuyers": 2689,
+      "mintWindow": {
+        "start": "2021-11-19T17:37:59Z",
+        "end": "2021-11-22T20:15:18Z"
+      },
+      "presaleUnitsApprox": 3728,
+      "finalDayUnits": 4049,
+      "publicBurst": {
+        "units": 2935,
+        "start": "2021-11-22T20:01:00Z",
+        "end": "2021-11-22T20:15:18Z",
+        "durationSeconds": 918
+      },
+      "sustainedMintsPerMinuteApprox": 195,
+      "peakMinute": {
+        "units": 386,
+        "at": "2021-11-22T20:03:00Z"
+      },
+      "chain": "Ethereum",
+      "contract": "0x5372f926b34Be60aC1436372107C3eE8c6e056E5",
+      "queryUrl": "https://dune.com/queries/8236840/12231724/",
+      "embedUrl": "https://dune.com/embeds/8236840/12231724"
+    }
+  },
+  {
+    "id": "resume-final-2-935-units-cleared-15-minutes",
+    "claim": "The final 2,935 units cleared in 15 minutes.",
+    "status": "verified",
+    "receipts": [
+      "https://dune.com/queries/8236840/12231724/",
+      "https://dune.com/embeds/8236840/12231724",
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The public burst ran from 20:01:00 to 20:15:18 UTC on 2021-11-22.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-final-tranche-cleared-approximately-195-units-per-minute",
+    "claim": "The final tranche cleared at approximately 195 units per minute.",
+    "status": "verified",
+    "receipts": [
+      "https://dune.com/queries/8236840/12231724/",
+      "https://dune.com/embeds/8236840/12231724",
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The public burst sustained approximately 195 mints per minute.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-launch-results-are-verifiable-chain",
+    "claim": "The launch results are verifiable on-chain.",
+    "status": "verified",
+    "receipts": [
+      "https://dune.com/queries/8236840/12231724/",
+      "https://dune.com/embeds/8236840/12231724",
+      "https://etherscan.io/address/0x5372f926b34Be60aC1436372107C3eE8c6e056E5"
+    ],
+    "receipt_type": "external",
+    "notes": "The Ethereum contract and Dune query provide public on-chain receipts.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-owned-metatravelers-production-infrastructure",
+    "claim": "Jeremy owned MetaTravelers’ production infrastructure.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 98; pending receipt verification."
+  },
+  {
+    "id": "resume-that-production-infrastructure-included-aws-ec2",
+    "claim": "That production infrastructure included AWS EC2.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 99; pending receipt verification."
+  },
+  {
+    "id": "resume-that-production-infrastructure-included-aws-s3",
+    "claim": "That production infrastructure included AWS S3.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 100; pending receipt verification."
+  },
+  {
+    "id": "resume-that-production-infrastructure-included-aws-lambda",
+    "claim": "That production infrastructure included AWS Lambda.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 101; pending receipt verification."
+  },
+  {
+    "id": "resume-that-production-infrastructure-included-aws-iam",
+    "claim": "That production infrastructure included AWS IAM.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 102; pending receipt verification."
+  },
+  {
+    "id": "resume-that-production-infrastructure-included-cloudflare",
+    "claim": "That production infrastructure included Cloudflare.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 103; pending receipt verification."
+  },
+  {
+    "id": "resume-that-production-infrastructure-included-ci-cd",
+    "claim": "That production infrastructure included CI/CD.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 104; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-owned-metatravelers-storefronts",
+    "claim": "Jeremy owned MetaTravelers’ storefronts.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 105; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-owned-metatravelers-internal-tools",
+    "claim": "Jeremy owned MetaTravelers’ internal tools.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 106; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-owned-metatravelers-data-pipelines",
+    "claim": "Jeremy owned MetaTravelers’ data pipelines.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 107; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-owned-metatravelers-deployments",
+    "claim": "Jeremy owned MetaTravelers’ deployments.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 108; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-owned-post-launch-issue-resolution",
+    "claim": "Jeremy owned post-launch issue resolution.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 109; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-was-responsible-every-metatravelers-production-incident",
+    "claim": "Jeremy was responsible for every MetaTravelers production incident.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 110; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-agent-workflows-operate-customer-support",
+    "claim": "Jeremy used agent workflows to operate customer support.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 111; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-agent-workflows-produce-reporting",
+    "claim": "Jeremy used agent workflows to produce reporting.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 112; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-agent-workflows-produce-content",
+    "claim": "Jeremy used agent workflows to produce content.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 113; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-agent-workflows-fulfillment-operations",
+    "claim": "Jeremy used agent workflows in fulfillment operations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 114; pending receipt verification."
+  },
+  {
+    "id": "resume-these-workflows-use-human-review-where-judgment-required",
+    "claim": "These workflows use human review where judgment is required.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 115; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-baton",
+    "claim": "Jeremy built Baton.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 116; pending receipt verification."
+  },
+  {
+    "id": "resume-baton-ranks-human-review-tasks",
+    "claim": "Baton ranks human-review tasks.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 117; pending receipt verification."
+  },
+  {
+    "id": "resume-baton-was-built-determine-which-human-reviews-should-be",
+    "claim": "Baton was built to determine which human reviews should be performed first.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 118; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-allvue-systems-march-2017-through-february-2020",
+    "claim": "Jeremy worked at Allvue Systems from March 2017 through February 2020.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 119; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-was-full-stack-software-engineer-allvue-march-2018",
+    "claim": "Jeremy was a full-stack software engineer at Allvue from March 2018 through February 2020.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 120; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-was-application-support-engineer-allvue-march-2017-through",
+    "claim": "Jeremy was an application support engineer at Allvue from March 2017 through March 2018.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 121; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-delivered-front-office-features",
+    "claim": "Jeremy delivered front-office features.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 122; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-delivered-back-office-features",
+    "claim": "Jeremy delivered back-office features.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 123; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-performed-data-migrations",
+    "claim": "Jeremy performed data migrations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 124; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-internal-automation",
+    "claim": "Jeremy built internal automation.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 125; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-everest-platform",
+    "claim": "Jeremy worked on the Everest platform.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 126; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-k2-platform",
+    "claim": "Jeremy worked on the K2 platform.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 127; pending receipt verification."
+  },
+  {
+    "id": "resume-everest-k2-are-fund-accounting-platforms",
+    "claim": "Everest and K2 are fund-accounting platforms.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 128; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-c-allvue",
+    "claim": "Jeremy used C# at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 129; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-net-framework-allvue",
+    "claim": "Jeremy used .NET Framework at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 130; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-typescript-allvue",
+    "claim": "Jeremy used TypeScript at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 131; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-javascript-allvue",
+    "claim": "Jeremy used JavaScript at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 132; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-knockout-js-allvue",
+    "claim": "Jeremy used Knockout.js at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 133; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-python-allvue",
+    "claim": "Jeremy used Python at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 134; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-mongodb-allvue",
+    "claim": "Jeremy used MongoDB at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 135; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-used-sql-allvue",
+    "claim": "Jeremy used SQL at Allvue.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 136; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-designed-cucumber-regression-suite",
+    "claim": "Jeremy designed a Cucumber regression suite.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 137; pending receipt verification."
+  },
+  {
+    "id": "resume-regression-suite-covered-loan-reconciliation-workflows",
+    "claim": "The regression suite covered loan-reconciliation workflows.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 138; pending receipt verification."
+  },
+  {
+    "id": "resume-suite-allowed-business-analysts-author-tests",
+    "claim": "The suite allowed business analysts to author tests.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 139; pending receipt verification."
+  },
+  {
+    "id": "resume-business-analysts-authored-tests-natural-language",
+    "claim": "Business analysts authored those tests in natural language.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 140; pending receipt verification."
+  },
+  {
+    "id": "resume-regression-suite-removed-approximately-800-manual-qa-hours-per",
+    "claim": "The regression suite removed approximately 800 manual QA hours per cycle.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 141; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-helped-onboard-three-institutional-clients",
+    "claim": "Jeremy helped onboard three institutional clients.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 142; pending receipt verification."
+  },
+  {
+    "id": "resume-clients-were-migrated-away-legacy-back-office-systems",
+    "claim": "Those clients were migrated away from legacy back-office systems.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 143; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-wrote-python-data-pipelines-migrations",
+    "claim": "Jeremy wrote Python data pipelines for those migrations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 144; pending receipt verification."
+  },
+  {
+    "id": "resume-pipelines-extracted-data",
+    "claim": "The pipelines extracted data.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 145; pending receipt verification."
+  },
+  {
+    "id": "resume-pipelines-transformed-data",
+    "claim": "The pipelines transformed data.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 146; pending receipt verification."
+  },
+  {
+    "id": "resume-pipelines-validated-data",
+    "claim": "The pipelines validated data.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 147; pending receipt verification."
+  },
+  {
+    "id": "resume-pipelines-loaded-data",
+    "claim": "The pipelines loaded data.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 148; pending receipt verification."
+  },
+  {
+    "id": "resume-migrated-data-included-decades-reporting",
+    "claim": "The migrated data included decades of reporting.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 149; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-owned-frontline-production-support",
+    "claim": "Jeremy owned frontline production support.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 150; pending receipt verification."
+  },
+  {
+    "id": "resume-supported-customers-included-private-equity-clients",
+    "claim": "The supported customers included private-equity clients.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 151; pending receipt verification."
+  },
+  {
+    "id": "resume-supported-customers-included-fund-accounting-clients",
+    "claim": "The supported customers included fund-accounting clients.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 152; pending receipt verification."
+  },
+  {
+    "id": "resume-production-support-work-covered-everest",
+    "claim": "The production-support work covered Everest.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 153; pending receipt verification."
+  },
+  {
+    "id": "resume-production-support-work-covered-k2",
+    "claim": "The production-support work covered K2.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 154; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-converted-recurring-support-tickets-into-reproducible-bug-reports",
+    "claim": "Jeremy converted recurring support tickets into reproducible bug reports.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 155; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-engineering-convert-recurring-support-issues-into-permanent",
+    "claim": "Jeremy worked with engineering to convert recurring support issues into permanent fixes.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 156; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-gitworthy",
+    "claim": "Jeremy built gitworthy.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/gitworthy"
+    ],
+    "receipt_type": "external",
+    "notes": "The public repository identifies Jeremy as the tool author.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-gitworthy-published-npm",
+    "claim": "gitworthy is published on npm.",
+    "status": "verified",
+    "receipts": [
+      "https://registry.npmjs.org/gitworthy/latest"
+    ],
+    "receipt_type": "external",
+    "notes": "The public npm registry publishes the gitworthy package.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-gitworthy-published-mcp-registry",
+    "claim": "gitworthy is published in the MCP registry.",
+    "status": "verified",
+    "receipts": [
+      "https://registry.modelcontextprotocol.io/v0.1/servers?search=gitworthy"
+    ],
+    "receipt_type": "external",
+    "notes": "The official MCP Registry API returns active io.github.trippyogi/gitworthy releases.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-gitworthy-performs-pre-flight-triage-open-source-contributions",
+    "claim": "gitworthy performs pre-flight triage for open-source contributions.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/gitworthy"
+    ],
+    "receipt_type": "external",
+    "notes": "The README describes preflight, ranking, and worth checking before implementation.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-gitworthy-helps-determine-where-fix-worth-making",
+    "claim": "gitworthy helps determine where a fix is worth making.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/gitworthy"
+    ],
+    "receipt_type": "external",
+    "notes": "The README describes preflight, ranking, and worth checking before implementation.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-used-gitworthy-select-contribution-targets",
+    "claim": "Jeremy used gitworthy to select contribution targets.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 162; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-merged-fix-openclaw-openclaw-windows-node",
+    "claim": "Jeremy has a merged fix in openclaw/openclaw-windows-node.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/openclaw/openclaw-windows-node/pull/1066"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in openclaw/openclaw-windows-node.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-merged-fix-redis-redisinsight",
+    "claim": "Jeremy has a merged fix in redis/RedisInsight.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/redis/RedisInsight/pull/6230"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in redis/RedisInsight.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-merged-fix-gazebosim-gz-sim",
+    "claim": "Jeremy has a merged fix in gazebosim/gz-sim.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/gazebosim/gz-sim/pull/3863"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in gazebosim/gz-sim.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-merged-fix-ros-controls-ros2-controllers",
+    "claim": "Jeremy has a merged fix in ros-controls/ros2_controllers.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/ros-controls/ros2_controllers/pull/2523"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in ros-controls/ros2_controllers.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-merged-fix-dora-rs-dora",
+    "claim": "Jeremy has a merged fix in dora-rs/dora.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/dora-rs/dora/pull/2960"
+    ],
+    "receipt_type": "external",
+    "notes": "The public GitHub pull request is merged in dora-rs/dora.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-s-merged-third-party-fixes-include-typescript-work",
+    "claim": "Jeremy’s merged third-party fixes include TypeScript work.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/redis/RedisInsight/pull/6230"
+    ],
+    "receipt_type": "external",
+    "notes": "The merged RedisInsight change includes TypeScript and TSX files.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-s-merged-third-party-fixes-include-c-work",
+    "claim": "Jeremy’s merged third-party fixes include C++ work.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/gazebosim/gz-sim/pull/3863",
+      "https://github.com/ros-controls/ros2_controllers/pull/2523"
+    ],
+    "receipt_type": "external",
+    "notes": "The merged Gazebo and ROS changes include C++ source files.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-s-merged-third-party-fixes-include-rust-work",
+    "claim": "Jeremy’s merged third-party fixes include Rust work.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/dora-rs/dora/pull/2960"
+    ],
+    "receipt_type": "external",
+    "notes": "The merged dora change includes Rust source files.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-baton-ranking-engine",
+    "claim": "Baton is a ranking engine.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/baton"
+    ],
+    "receipt_type": "external",
+    "notes": "The public repository describes Baton as a ranking engine for human attention in multi-agent systems.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-baton-ranks-human-attention",
+    "claim": "Baton ranks human attention.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/baton"
+    ],
+    "receipt_type": "external",
+    "notes": "The public repository describes Baton as a ranking engine for human attention in multi-agent systems.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-baton-designed-multi-agent-systems",
+    "claim": "Baton is designed for multi-agent systems.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/trippyogi/baton"
+    ],
+    "receipt_type": "external",
+    "notes": "The public repository describes Baton as a ranking engine for human attention in multi-agent systems.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-baton-includes-state-machine",
+    "claim": "Baton includes a state machine.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 174; pending receipt verification."
+  },
+  {
+    "id": "resume-baton-includes-review-contracts",
+    "claim": "Baton includes review contracts.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 175; pending receipt verification."
+  },
+  {
+    "id": "resume-baton-includes-tool-calling-dispatch",
+    "claim": "Baton includes tool-calling dispatch.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 176; pending receipt verification."
+  },
+  {
+    "id": "resume-baton-includes-adversarial-evaluations",
+    "claim": "Baton includes adversarial evaluations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 177; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-open-pull-requests-involving-nousresearch-repositories",
+    "claim": "Jeremy has open pull requests involving NousResearch repositories.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/NousResearch/hermes-agent/pull/78879"
+    ],
+    "receipt_type": "external",
+    "notes": "A public NousResearch pull request authored by trippyogi is open.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-open-pull-requests-involving-hugging-face-repositories",
+    "claim": "Jeremy has open pull requests involving Hugging Face repositories.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/huggingface/lerobot/pull/4303"
+    ],
+    "receipt_type": "external",
+    "notes": "A public Hugging Face pull request authored by trippyogi is open.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-open-pull-request-involving-shopify-dawn",
+    "claim": "Jeremy has an open pull request involving Shopify/dawn.",
+    "status": "verified",
+    "receipts": [
+      "https://github.com/Shopify/dawn/pull/3939"
+    ],
+    "receipt_type": "external",
+    "notes": "The public Shopify Dawn pull request authored by trippyogi is open.",
+    "verified_at": "2026-08-06"
+  },
+  {
+    "id": "resume-jeremy-s-github-profile-contains-fuller-contribution-list",
+    "claim": "Jeremy’s GitHub profile contains a fuller contribution list.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 181; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-creative-engineering-before-2017",
+    "claim": "Jeremy worked in creative engineering before 2017.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 182; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-motion-designer",
+    "claim": "Jeremy worked as a motion designer.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 183; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-interactive-developer",
+    "claim": "Jeremy worked as an interactive developer.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 184; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-performed-motion-design-work",
+    "claim": "Jeremy performed motion-design work.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 185; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-performed-animation-work",
+    "claim": "Jeremy performed animation work.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 186; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-unity",
+    "claim": "Jeremy worked with Unity.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 187; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-built-interactive-installations",
+    "claim": "Jeremy built interactive installations.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 188; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-worked-real-time-graphics",
+    "claim": "Jeremy worked with real-time graphics.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 189; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-performed-work-giphy",
+    "claim": "Jeremy performed work for Giphy.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 190; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-performed-work-vans",
+    "claim": "Jeremy performed work for Vans.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 191; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-performed-work-kacey-musgraves",
+    "claim": "Jeremy performed work for Kacey Musgraves.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 192; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-s-gif-work-received-more-than-five-million",
+    "claim": "Jeremy’s GIF work received more than five million views.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 193; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-attended-university-california-san-diego",
+    "claim": "Jeremy attended the University of California, San Diego.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 194; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-earned-bachelor-science-degree",
+    "claim": "Jeremy earned a Bachelor of Science degree.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 195; pending receipt verification."
+  },
+  {
+    "id": "resume-jeremy-s-degree-was-mechanical-aerospace-engineering",
+    "claim": "Jeremy’s degree was in Mechanical and Aerospace Engineering.",
+    "status": "not_verifiable",
+    "receipts": [],
+    "receipt_type": "none",
+    "notes": "Canonical résumé Phase 1 assertion 196; pending receipt verification."
   }
 ]

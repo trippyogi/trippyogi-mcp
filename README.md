@@ -13,7 +13,7 @@ Most portfolios ask a reviewer to trust a set of claims. This one exposes the un
 | `get_projects` | Shipped or publicly inspectable work with source, package, live, and receipt URLs where available. |
 | `get_experience` | Roles, dates, and what was built, aligned to the public resume. |
 | `get_availability` | Current role targets, work modes, and public contact paths. |
-| `verify_claim` | A verdict, supported and unsupported portions, estimate marker, and receipt URLs for a natural-language claim. |
+| `verify_claim` | A status, scope note, receipt rank, and public receipt URLs for a natural-language claim. |
 
 The server is public, stateless, unauthenticated, and read-only. It applies a best-effort in-process rate limit per serverless isolate (not a shared global limiter). Prefer an edge/WAF limit in front of `/mcp` for production abuse control. It records the tool name and timestamp for each call and never logs tool inputs.
 
@@ -55,19 +55,15 @@ Output:
 
 ```json
 {
-  "verdict": "verified",
+  "status": "verified",
   "claim": "Legendari had 673 Kickstarter backers",
   "matchedClaim": "Legendari was backed by 673 Kickstarter backers who pledged $190,292 against a $125,000 goal.",
-  "supported": "Kickstarter publicly reports the backer count, pledged amount, and campaign goal.",
-  "unsupported": null,
-  "estimate": false,
-  "evidence": [
-    {
-      "label": "Legendari Kickstarter",
-      "url": "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures",
-      "kind": "independent"
-    }
-  ]
+  "receipts": [
+    "https://www.kickstarter.com/projects/metatravelers/legendari-action-figures"
+  ],
+  "receipt_type": "external",
+  "scope": null,
+  "notes": "Kickstarter publicly reports the backer count, pledged amount, and campaign goal."
 }
 ```
 
@@ -77,7 +73,7 @@ Output:
 - [`content/claims.json`](content/claims.json) maps resume claims to receipts and caveats.
 - `npm run generate:site` produces `site/llms.txt`, `site/resume.md`, `site/projects.md`, and `site/person.jsonld` from the same source.
 
-The natural-language matcher is deterministic. It does not use an LLM, browse at request time, or invent evidence. Numeric conflicts fail closed: asking it to verify 9,000 units will not match a receipt for 7,777.
+The natural-language matcher is deterministic. It does not use an LLM, browse at request time, or invent receipts. Numeric conflicts fail closed: asking it to verify 9,000 units will not match a receipt for 7,777. Internal `retired` records are deliberately excluded from tool results.
 
 ## Deploy
 
