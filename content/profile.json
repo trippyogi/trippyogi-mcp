@@ -184,16 +184,12 @@
       "number": 75699,
       "title": "fix(cli): untrack sqlite connections only after close succeeds",
       "url": "https://github.com/NousResearch/hermes-agent/commit/a266155cc440cacf68faf891eca3e0885a1a8829",
-      "state": "cherry-picked",
+      "state": "merged",
       "merged_at": "2026-08-01T06:18:12Z",
       "category": "correctness",
       "first_party": false,
       "featured": true,
-      "note": "A failed SQLite close left the FD open while the byte-probe guard thought nothing was live.",
-      "signal": {
-        "url": "https://github.com/NousResearch/hermes-agent/pull/75699#issuecomment-5150156354",
-        "descriptor": "maintainer cherry-picked via salvage PR"
-      }
+      "note": "A failed SQLite close left the FD open while the byte-probe guard thought nothing was live."
     },
     {
       "repo": "redis/RedisInsight",

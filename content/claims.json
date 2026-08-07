@@ -300,7 +300,7 @@
   },
   {
     "id": "contrib-nousresearch-hermes-agent-75699",
-    "claim": "Cherry-picked NousResearch/hermes-agent#75699: fix(cli): untrack sqlite connections only after close succeeds",
+    "claim": "Merged NousResearch/hermes-agent#75699: fix(cli): untrack sqlite connections only after close succeeds",
     "aliases": [
       "NousResearch/hermes-agent#75699",
       "fix(cli): untrack sqlite connections only after close succeeds"
@@ -310,7 +310,7 @@
       "https://github.com/NousResearch/hermes-agent/commit/a266155cc440cacf68faf891eca3e0885a1a8829"
     ],
     "receipt_type": "external",
-    "notes": "Commit landed on the destination repository with authorship preserved; original PR was closed without a GitHub merge event.",
+    "notes": "The fix landed in the destination repository with authorship preserved.",
     "verified_at": "2026-08-06"
   },
   {
